@@ -24,6 +24,7 @@
     --text-white:#fff;
     --text-gray:#dee2e6;
     --anchor-color: #007aff;
+    --primary-text-maroon:#803131;
 
     --primary-font: 'Barlow Condensed', sans-serif;
     --secondary-font: 'Roboto' , sans-serif;
@@ -122,7 +123,7 @@ button:hover{
     background: var(--bg-white);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--secondary-color);
+    background: var(--primary-text);
 }
 .main-btn{
     position: relative;
@@ -246,4 +247,97 @@ section{
     margin: auto;
     z-index: 999;
     transition: 0.3s all ease-in-out;
+}
+
+/* 02 Banner Section */
+.banner-section{
+   
+    background: url('../images/front-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.banner-section .carousel-item{
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+.banner-section .carousel-caption{
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.banner-section .carousel-caption h3{
+   padding-bottom: 0.5rem;
+}
+
+
+.banner-section .carousel-caption p{
+    max-width: 50rem ;
+    margin-bottom: 2rem;
+}
+
+/* 03 features css */
+
+.feature-section .features-box{
+    background-color: transparent;
+    border: 0.15rem solid var(--light-color);
+    padding: 8rem 0;
+    transition: all 0.3s;
+    border-radius: 1rem;
+}
+.feature-section .features-icon-border{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid var(--light-color) ;
+    padding: 1.3rem;
+    display: inline-block;
+}
+.feature-section .features-box .features-icon{
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: var(--light-color);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-section .features-box .features-icon img{
+    width: 4.7rem;
+}
+
+.feature-section .features-box h3{
+    margin-top: 1.5rem;
+    color: var(--primary-text);
+}
+.feature-section .features-box:hover{
+    background-color: var(--primary-text-maroon);
+    border-color: var(--primary-text-maroon);
+}
+
+.feature-section .features-box:hover h3{
+    color: var(--text-white);
+}
+
+/* 04 About section css */
+
+.landing-about-section{
+    background: url("../images/about/about-banner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10rem 0;
+}
+.landing-about-section p{
+    color:var(--text-white) ;
+    margin-bottom: 2rem;
+    max-width: 60rem ;
 }
