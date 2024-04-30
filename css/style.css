@@ -163,7 +163,7 @@ section{
     margin: auto;
     margin-bottom: 1.5rem;
 }
-.about .banner-section,
+.about .banner-section ,
 .product .banner-section,
 .gallery .banner-section,
 .contact .banner-section {
@@ -172,10 +172,11 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 17rem;
+    padding-top: 20.5rem;
     padding-bottom: 10rem;
     min-height: auto;
 }
+
 
 /* ----------01 navbar css------- */
 
@@ -554,6 +555,12 @@ transition: all 0.3s ease-out 0s;
    color: var(--primary-text);
 }
 /* 10 Product page css */
+
+.banner-section .banner-content{
+    padding-top: 10rem;
+}
+
+
 .product .product-details p{
     margin-bottom: 1.5rem;
 }
