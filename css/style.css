@@ -136,7 +136,7 @@ button:hover{
     padding: 1rem 3.5rem;
     font-weight: 600;
     font-size: 1.8rem;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     letter-spacing: 0.2rem;
 }
 .main-btn:hover{
@@ -166,7 +166,8 @@ section{
 .about .banner-section ,
 .product .banner-section,
 .gallery .banner-section,
-.contact .banner-section {
+.contact .banner-section,
+.distributors .banner-section {
     /* background: url('images/wood2.jpeg'); */
     background: url('../images/front-img.png');
     background-repeat: no-repeat;
@@ -174,6 +175,7 @@ section{
     background-size: cover;
     padding-top: 20.5rem;
     padding-bottom: 10rem;
+    
     min-height: auto;
 }
 
@@ -275,14 +277,15 @@ section{
     width: 100%;
 }
 
-.banner-section .carousel-caption h3{
+/* .banner-section .carousel-caption h3{
    padding-bottom: 0.5rem;
-}
+   
+} */
 
 
 .banner-section .carousel-caption p{
     max-width: 50rem ;
-    margin-bottom: 2rem;
+    /* margin-bottom: 0.3rem; */
 }
 
 /* 03 features css */
@@ -563,4 +566,59 @@ transition: all 0.3s ease-out 0s;
 
 .product .product-details p{
     margin-bottom: 1.5rem;
+}
+
+
+/* 11 contact css */
+.contact .contact-form{
+    /* background-color: var(--light-color); */
+    background:white;
+    padding:5rem ;
+    box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 /20%);
+}
+
+
+.contact .contact-form .form-control{
+    padding: 1rem 1.5rem;
+    /* border-radius: 0rem; */
+    /* border: 0.1rem solid black; */
+    border: 0.1rem solid var(--secondary-color);
+    color: var(--primary-text);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+}
+
+.contact .contact-form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.contact .contact-form textarea{
+    min-height: 15rem;
+}
+.contact .contact-form .info-box li{
+    position: relative;
+    padding-left: 7rem;
+    padding-bottom: 3.2rem;
+    margin-bottom: 2.9rem;
+}
+.contact .contact-form .info-box li ion-icon{
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    /* color:black ; */
+}
+
+/* .contact .contact-form .info-box li p{
+    color: var(--primary-text);
+} */
+
+.contact .contact-form .info-box li a{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family:var(--secondary-font) ;
 }
